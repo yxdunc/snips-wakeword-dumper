@@ -1,0 +1,13 @@
+[Unit]
+Description=Snips Hotword
+After=network.target
+
+[Service]
+User=_snips
+Group=_snips
+ExecStart=/usr/bin/wakeword_dumper.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
