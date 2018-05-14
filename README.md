@@ -2,9 +2,17 @@
 
 ## Simple Usage:
 
+ - Go to the folder:
+
 ```
-sh install_service_ssh.sh wakeword_dumper_package <username>@<hostname>
+cd snips-wakeword-dumper
 ```
 
-**You will find all the recording in "/usr/share/snips/audio_dumps/"**
+ - Then run this script (from your computer or directly on the pi):
+
+```
+sh install_service_ssh.sh wakeword_dumper_package pi@<raspi-name>.local
+```
+
+**You will find all the recording on your pi in "/usr/share/snips/audio_dumps/"**
 
